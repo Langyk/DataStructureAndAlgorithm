@@ -11,7 +11,8 @@ public class SingleLinkedListDemo {
         PersonNode person2 = new PersonNode(2, "苏超", "suf");
         PersonNode person3 = new PersonNode(3, "杨金凯", "Kevin");
         PersonNode person4 = new PersonNode(4, "孙祥胜", "sun");
-        SingleLinkedList singleLinkedList=new SingleLinkedList();
+        PersonNode updatePerson=new PersonNode(2,"苏菲","fei");
+        SingleLinkedList singleLinkedList = new SingleLinkedList();
 //        singleLinkedList.addNode(person1);
 //        singleLinkedList.addNode(person2);
 //        singleLinkedList.addNode(person3);
@@ -20,6 +21,9 @@ public class SingleLinkedListDemo {
         singleLinkedList.addByOrder(person2);
         singleLinkedList.addByOrder(person1);
         singleLinkedList.addByOrder(person3);
+        singleLinkedList.show();
+        singleLinkedList.update(updatePerson);
+        System.out.println("修改后的链表信息");
         singleLinkedList.show();
     }
 }
@@ -32,7 +36,7 @@ class SingleLinkedList {
     //添加节点的单向链表
 
     /**
-     *在链表尾部插入
+     * 在链表尾部插入
      */
 
     public void addNode(PersonNode personNode) {
@@ -42,47 +46,74 @@ class SingleLinkedList {
             if (temp.next == null) {
                 break;
             }
-            temp=temp.next;
+            temp = temp.next;
         }
-        temp.next=personNode;
+        temp.next = personNode;
     }
 
     /**
-     *按照number顺序插入
+     * 按照number顺序插入
      */
-    public void addByOrder(PersonNode personNode){
+    public void addByOrder(PersonNode personNode) {
         //定义插入标识符
-        boolean flag =false;
+        boolean flag = false;
         //定义替代变量
-        PersonNode temp=headNode;
-        while (true){
-            if(temp.next==null){
+        PersonNode temp = headNode;
+        while (true) {
+            if (temp.next == null) {
                 break;
             }
             //满足条件
-            if(temp.next.number>personNode.number){
+            if (temp.next.number > personNode.number) {
+                break;
+            } else if (temp.next.number == personNode.number) {
+                flag = true;
                 break;
             }
-           else if(temp.next.number==personNode.number){
-                flag = true;
-               break;
-           }
-           //后移
-            temp=temp.next;
+            //后移
+            temp = temp.next;
         }
         //插入节点
-        if(flag){
+        if (flag) {
             System.out.println("节点已经存在~~~~");
-        }
-        else {
-            personNode.next=temp.next;
-            temp.next=personNode;
+        } else {
+            personNode.next = temp.next;
+            temp.next = personNode;
         }
     }
+/**
+ * 修改节点信息
+ */
 
+public void update(PersonNode personNode){
+    boolean flag=false;
+    PersonNode temp=headNode;
+    //根据编号找到要修改的节点
+    while (true){
+        if(temp.next==null){
+            System.out.println("链表为空");
+            break;
+        }
+        if(temp.next.number==personNode.number){
+            flag=true;
+            break;
+        }
+        temp=temp.next;
+    }
+    if(flag){
+        temp.next.nickName=personNode.nickName;
+        temp.next.name=personNode.name;
+    }else {
+        System.out.println("找不到该节点的信息");
+    }
+
+}
+    /**
+     * 遍历节点
+     */
     //显示链表中的有效节点
     public void show() {
-        if(headNode.next==null){
+        if (headNode.next == null) {
             System.out.println("该链表为空~~~");
         }
         PersonNode temp = headNode;
