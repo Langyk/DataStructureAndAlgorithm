@@ -22,8 +22,11 @@ public class SingleLinkedListDemo {
         singleLinkedList.addByOrder(person1);
         singleLinkedList.addByOrder(person3);
         singleLinkedList.show();
-        singleLinkedList.update(updatePerson);
-        System.out.println("修改后的链表信息");
+//        singleLinkedList.update(updatePerson);
+//        System.out.println("修改后的链表信息");
+//        singleLinkedList.show();
+        System.out.println("删除某节点后的链表");
+        singleLinkedList.delete(person3);
         singleLinkedList.show();
     }
 }
@@ -103,6 +106,31 @@ public void update(PersonNode personNode){
     if(flag){
         temp.next.nickName=personNode.nickName;
         temp.next.name=personNode.name;
+    }else {
+        System.out.println("找不到该节点的信息");
+    }
+
+}
+/**
+ * 删除某一个节点
+ * 先根据number查找，在删除
+ */
+public void delete(PersonNode personNode){
+    boolean flag=false;
+    PersonNode temp=headNode;
+    while (true){
+        if(temp.next==null){
+            System.out.println("链表为空");
+            break;
+        }
+        if(temp.next.number==personNode.number){
+            flag=true;
+            break;
+        }
+        temp=temp.next;
+    }
+    if(flag){
+        temp.next=temp.next.next;
     }else {
         System.out.println("找不到该节点的信息");
     }
