@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67ba30b7-502a-4c62-9e68-bd6830e374bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/weekly/Week01Test01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataStructure.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/LinkedList/PersonNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/LinkedList/PersonNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/LinkedList/SingleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/LinkedList/SingleLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/LinkedList/SingleLinkedListDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/LinkedList/SingleLinkedListDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/array/parseArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/array/parseArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/queue/ArrayQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/queue/ArrayQueue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/queue/CQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/queue/CQueue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/queue/CycleQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/queue/CycleQueue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/queue/Queue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/queue/Queue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/weekly/Week01Test01.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/weekly/Week01Test01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/weekly/Week01Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/weekly/Week01Test01.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/weekly/Week01Test01.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+            <state relative-caret-position="344">
+              <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -57,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/src/queue/ArrayQueue.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
-              <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -91,15 +83,16 @@
         <option value="$PROJECT_DIR$/src/queue/CycleQueue.java" />
         <option value="$PROJECT_DIR$/src/LinkedList/SingleLinkedListDemo.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/weekly/Week01Test01V1.java" />
         <option value="$PROJECT_DIR$/src/weekly/Week01Test01.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1" />
+    <option name="y" value="1" />
+    <option name="width" value="1364" />
+    <option name="height" value="726" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -136,10 +129,10 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577181263407" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577188574294" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
@@ -156,7 +149,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Week01Test01">
+  <component name="RunManager" selected="Application.Week01Test01V1">
     <configuration name="ArrayQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="queue.ArrayQueue" />
       <module name="DataStructureAndAlgorithm" />
@@ -224,7 +217,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Week01Test01" />
+        <item itemvalue="Application.Week01Test01V1" />
         <item itemvalue="Application.ArrayQueue" />
         <item itemvalue="Application.SingleLinkedListDemo" />
         <item itemvalue="Application.CycleQueue" />
@@ -249,10 +242,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16099000" />
+    <option name="totallyTimeSpent" value="21171000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1364" height="726" extended-state="0" />
+    <frame x="1" y="1" width="1364" height="726" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2684049" />
@@ -264,7 +257,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.050675675" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.0777027" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.31967214" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -272,7 +265,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.6199324" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.17736487" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3293919" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -323,6 +316,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/queue/ArrayQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/array/parseArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -340,17 +340,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/queue/ArrayQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/weekly/Week01Test01.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+        <state relative-caret-position="344">
+          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -406,12 +399,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>DataStructureAndAlgorithm</last-edited>
+          <last-edited>dataStructure</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

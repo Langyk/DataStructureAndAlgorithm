@@ -13,62 +13,43 @@ package weekly;
  */
 public class Week01Test01 {
     public static void main(String[] args) {
-        int arrTest[][];
-        Week01Test01 week01Test01 = new Week01Test01();
+        //构造数组
+        int arrTest[][]={{1,2,3,4,100},
+                            {5,6,9,101},
+                            {7,99,100,102}};
         /**
-         * 1	2	3	4	5	6	7	8	9
-         * 2	3	4	5	6	7	8	9	10
-         * 3	4	5	6	7	8	9	10	11
-         * 4	5	6	7	8	9	10	11	12
-         * 5	6	7	8	9	10	11	12	13
-         * 只需要遍历最外侧（右上）即可查询到所有的数据
+         * arrTest[row][col]
+         * 查找规则：从右上角开始，比较输入的值value与数组中右上角的值，
+         *   如果小于右上角的值，如果大于右上角的值col--，
+         *   如果大于右上角的值，row++，
+         *   继续比较arrTest[row][col]与value
          */
-        //构造二维数组，并判断二维数组中是否存在特定的值
-        boolean flag = week01Test01.isExist(5, 9,21);
+        Week01Test01 week01Test01=new Week01Test01();
+        Boolean flag=week01Test01.isExist(arrTest,9);
         if(flag){
-            System.out.println("该整数存在二维该数组中");
+            System.out.println("该值存在数组中");
         }else {
-            System.out.println("该值不存在");
+            System.out.println("该值不存在数组中");
         }
-
-
 
     }
 
-
-    //编写一个构造数组的函数
-
-    public int[][] structureArray(int m, int n) {
-        int array[][] = new int[m][n];
-        for (int i = 0; i < m; i++) {
-            int value = i + 1;
-            for (int j = 0; j < n; j++) {
-                array[i][j] = value;
-                value++;
-                System.out.print(array[i][j] + "\t");
-            }
-            System.out.println();
-        }
-        return array;
-    }
-    //编写一个判断整数是否存在二维数组中的方法
-    public boolean isExist(int m,int n,int value){
-        int array[][]=this.structureArray(m,n);
-        for (int i = 0; i < m; i++) {
-            if(i==0){
-                for(int j=0;j<n;j++){
-                    if(value==array[i][j]){
-                        return true;
-                    }
-
-                }
-            }
-            if(value==array[i][n-1]){
-                return true;
-            }
-
-        }
-        return false;
+    //编写一个查找方法,从右上角开始查找
+    public boolean isExist(int [][] arrTest,int value){
+        int row=0;
+        int col=arrTest[1].length-1;
+       while (row<arrTest.length&&col>=0){
+           if(value==arrTest[row][col]){
+               return true;
+           }
+           else if(arrTest[row][col]>value){
+               col--;
+           }
+           else {
+               row++;
+           }
+       }
+       return false;
     }
 
 }
