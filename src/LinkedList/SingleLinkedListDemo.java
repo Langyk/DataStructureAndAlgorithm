@@ -11,7 +11,7 @@ public class SingleLinkedListDemo {
         PersonNode person2 = new PersonNode(2, "苏超", "suf");
         PersonNode person3 = new PersonNode(3, "杨金凯", "Kevin");
         PersonNode person4 = new PersonNode(4, "孙祥胜", "sun");
-        PersonNode updatePerson=new PersonNode(2,"苏菲","fei");
+        PersonNode updatePerson = new PersonNode(2, "苏菲", "fei");
         SingleLinkedList singleLinkedList = new SingleLinkedList();
 //        singleLinkedList.addNode(person1);
 //        singleLinkedList.addNode(person2);
@@ -22,12 +22,21 @@ public class SingleLinkedListDemo {
         singleLinkedList.addByOrder(person1);
         singleLinkedList.addByOrder(person3);
         singleLinkedList.show();
+
 //        singleLinkedList.update(updatePerson);
 //        System.out.println("修改后的链表信息");
 //        singleLinkedList.show();
-        System.out.println("删除某节点后的链表");
-        singleLinkedList.delete(person3);
-        singleLinkedList.show();
+//        System.out.println("删除某节点后的链表");
+//        singleLinkedList.delete(person3);
+//        singleLinkedList.show();
+/**
+ * 面试题测试
+ */
+        int length = singleLinkedList.getLength();
+        System.out.println("链表中有效节点的个数为" + length);
+        PersonNode personNode=singleLinkedList.getindex(3);
+        System.out.println(personNode);
+
     }
 }
 
@@ -84,58 +93,61 @@ class SingleLinkedList {
             temp.next = personNode;
         }
     }
-/**
- * 修改节点信息
- */
 
-public void update(PersonNode personNode){
-    boolean flag=false;
-    PersonNode temp=headNode;
-    //根据编号找到要修改的节点
-    while (true){
-        if(temp.next==null){
-            System.out.println("链表为空");
-            break;
-        }
-        if(temp.next.number==personNode.number){
-            flag=true;
-            break;
-        }
-        temp=temp.next;
-    }
-    if(flag){
-        temp.next.nickName=personNode.nickName;
-        temp.next.name=personNode.name;
-    }else {
-        System.out.println("找不到该节点的信息");
-    }
+    /**
+     * 修改节点信息
+     */
 
-}
-/**
- * 删除某一个节点
- * 先根据number查找，在删除
- */
-public void delete(PersonNode personNode){
-    boolean flag=false;
-    PersonNode temp=headNode;
-    while (true){
-        if(temp.next==null){
-            System.out.println("链表为空");
-            break;
+    public void update(PersonNode personNode) {
+        boolean flag = false;
+        PersonNode temp = headNode;
+        //根据编号找到要修改的节点
+        while (true) {
+            if (temp.next == null) {
+                System.out.println("链表为空");
+                break;
+            }
+            if (temp.next.number == personNode.number) {
+                flag = true;
+                break;
+            }
+            temp = temp.next;
         }
-        if(temp.next.number==personNode.number){
-            flag=true;
-            break;
+        if (flag) {
+            temp.next.nickName = personNode.nickName;
+            temp.next.name = personNode.name;
+        } else {
+            System.out.println("找不到该节点的信息");
         }
-        temp=temp.next;
-    }
-    if(flag){
-        temp.next=temp.next.next;
-    }else {
-        System.out.println("找不到该节点的信息");
+
     }
 
-}
+    /**
+     * 删除某一个节点
+     * 先根据number查找，在删除
+     */
+    public void delete(PersonNode personNode) {
+        boolean flag = false;
+        PersonNode temp = headNode;
+        while (true) {
+            if (temp.next == null) {
+                System.out.println("链表为空");
+                break;
+            }
+            if (temp.next.number == personNode.number) {
+                flag = true;
+                break;
+            }
+            temp = temp.next;
+        }
+        if (flag) {
+            temp.next = temp.next.next;
+        } else {
+            System.out.println("找不到该节点的信息");
+        }
+
+    }
+
     /**
      * 遍历节点
      */
@@ -152,6 +164,48 @@ public void delete(PersonNode personNode){
             temp = temp.next;
             System.out.println(temp);
         }
+    }
+
+
+    /***
+     * 面试题
+     * 1、查询链表中有效节点的个数
+     * 2、查找链表中倒数第K个节点
+     */
+    public int getLength() {
+        int length = 0;
+        //构造一个临时节点
+        PersonNode temp = headNode;
+        temp = temp.next;
+        if (temp == null) {
+            return 0;
+        }
+        while (true) {
+            temp = temp.next;
+            length++;
+
+            if (temp == null) {
+                break;
+            }
+        }
+
+        return length;
+    }
+
+    /**
+     *2、查找链表中倒数第K个节点
+     * 思路：先找出有效节点的总个数length，倒数第K个节点为：证书第（Length-k）个节点
+     */
+    public PersonNode getindex(int k){
+        int length=this.getLength();
+        PersonNode temp=headNode;
+        if(length==0&&k<0&&k>length){
+            return null;
+        }
+        for(int i=0;i<length-k+1;i++){
+                temp=temp.next;
+        }
+        return temp;
     }
 }
 

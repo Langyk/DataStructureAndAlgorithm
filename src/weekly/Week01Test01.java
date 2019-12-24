@@ -23,6 +23,7 @@ public class Week01Test01 {
          *   如果小于右上角的值，如果大于右上角的值col--，
          *   如果大于右上角的值，row++，
          *   继续比较arrTest[row][col]与value
+         *   时间复杂度O(m+n)
          */
         Week01Test01 week01Test01=new Week01Test01();
         Boolean flag=week01Test01.isExist(arrTest,9);
