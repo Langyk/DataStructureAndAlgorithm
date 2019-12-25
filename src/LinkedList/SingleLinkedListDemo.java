@@ -1,5 +1,7 @@
 package LinkedList;
 
+import java.util.Stack;
+
 /**
  * @Author: Simon Lang
  * @Date: 2019/12/1 14:25
@@ -11,6 +13,8 @@ public class SingleLinkedListDemo {
         PersonNode person2 = new PersonNode(2, "苏超", "suf");
         PersonNode person3 = new PersonNode(3, "杨金凯", "Kevin");
         PersonNode person4 = new PersonNode(4, "孙祥胜", "sun");
+
+
         PersonNode updatePerson = new PersonNode(2, "苏菲", "fei");
         SingleLinkedList singleLinkedList = new SingleLinkedList();
 //        singleLinkedList.addNode(person1);
@@ -37,10 +41,11 @@ public class SingleLinkedListDemo {
 //
 //        PersonNode personNode=singleLinkedList.getindex(3);
 //        System.out.println(personNode);
-
-        singleLinkedList.reverseSingleList(singleLinkedList.getHeadNode());
-        singleLinkedList.show(singleLinkedList.getHeadNode());
-
+//        System.out.println("单链表的反转~~~");
+//        singleLinkedList.reverseSingleList(singleLinkedList.getHeadNode());
+//        singleLinkedList.show(singleLinkedList.getHeadNode());
+        System.out.println("逆序输出单链表");
+        singleLinkedList.reversePrint(singleLinkedList.getHeadNode());
     }
 }
 
@@ -183,6 +188,7 @@ class SingleLinkedList {
      * 1、查询链表中有效节点的个数
      * 2、查找链表中倒数第K个节点
      * 3、单链表的反转
+     * 4、从尾到头打印单链表
      */
     public int getLength() {
         int length = 0;
@@ -205,20 +211,21 @@ class SingleLinkedList {
     }
 
     /**
-     *2、查找链表中倒数第K个节点
+     * 2、查找链表中倒数第K个节点
      * 思路：先找出有效节点的总个数length，倒数第K个节点为：证书第（Length-k）个节点
      */
-    public PersonNode getindex(int k){
-        int length=this.getLength();
-        PersonNode temp=headNode;
-        if(length==0&&k<0&&k>length){
+    public PersonNode getindex(int k) {
+        int length = this.getLength();
+        PersonNode temp = headNode;
+        if (length == 0 && k < 0 && k > length) {
             return null;
         }
-        for(int i=0;i<length-k+1;i++){
-                temp=temp.next;
+        for (int i = 0; i < length - k + 1; i++) {
+            temp = temp.next;
         }
         return temp;
     }
+
     /**
      * 3、单链表的反转
      * 思路：重新定义一个单链表的头结点reverseHead
@@ -226,27 +233,51 @@ class SingleLinkedList {
      * 将原始节点的头结点指向新建链表的第一个有效节点,即head.next=reverseHead.next
      */
 
-    public void reverseSingleList(PersonNode head){
+    public void reverseSingleList(PersonNode head) {
         //定义一个临时变量
-        PersonNode cur=head.next; //当前的有效节点
-        PersonNode next=null;//当前有效节点的下一个节点
+        PersonNode cur = head.next; //当前的有效节点
+        PersonNode next = null;//当前有效节点的下一个节点
         //定义一个反转链表的头结点
-        PersonNode reverseHeadNode=new PersonNode(0,"","");
+        PersonNode reverseHeadNode = new PersonNode(0, "", "");
 
         while (cur != null) {
             //判断是否需要反转，原始链表为空或者只有一个有效结点时，则不需要反转
             if (cur == null || cur.next == null) {
                 break;
             }
-            next=cur.next;//指向当前有效结点的下一个节点
-            cur.next=reverseHeadNode.next;//将有效结点连接起来
-            reverseHeadNode.next=cur;//将原始链表的有效结点放置到reverseHead的最前端
-            cur=next;
+            next = cur.next;//指向当前有效结点的下一个节点
+            cur.next = reverseHeadNode.next;//将有效结点连接起来
+            reverseHeadNode.next = cur;//将原始链表的有效结点放置到reverseHead的最前端
+            cur = next;
         }
         //将原始链表的头结点指向反转链表的第一个有效结点
-        head.next=reverseHeadNode.next;
+        head.next = reverseHeadNode.next;
 
     }
+
+    /**
+     * 4、从尾到头打印单链表（两种方式）
+     * 方式1：将单链表反转后打印，但是会破坏原始的单链表的结构
+     * 方式2：利用栈的先入后出的特性进行单链表的打印。
+     */
+    public void reversePrint(PersonNode head) {
+        Stack stack = new Stack<PersonNode>();
+        PersonNode cur = head.next;
+        //压栈
+        while (true) {
+            if (cur == null) {
+                break;
+            }
+            stack.add(cur);
+            cur = cur.next;
+        }
+        //出栈
+        while (stack.size() > 0) {
+            System.out.println(stack.pop());
+        }
+
+    }
+
 }
 
 /**
