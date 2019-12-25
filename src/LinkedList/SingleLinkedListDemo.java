@@ -21,7 +21,7 @@ public class SingleLinkedListDemo {
         singleLinkedList.addByOrder(person2);
         singleLinkedList.addByOrder(person1);
         singleLinkedList.addByOrder(person3);
-        singleLinkedList.show();
+        singleLinkedList.show(singleLinkedList.getHeadNode());
 
 //        singleLinkedList.update(updatePerson);
 //        System.out.println("修改后的链表信息");
@@ -32,10 +32,14 @@ public class SingleLinkedListDemo {
 /**
  * 面试题测试
  */
-        int length = singleLinkedList.getLength();
-        System.out.println("链表中有效节点的个数为" + length);
-        PersonNode personNode=singleLinkedList.getindex(3);
-        System.out.println(personNode);
+//        int length = singleLinkedList.getLength();
+//        System.out.println("链表中有效节点的个数为" + length);
+//
+//        PersonNode personNode=singleLinkedList.getindex(3);
+//        System.out.println(personNode);
+
+        singleLinkedList.reverseSingleList(singleLinkedList.getHeadNode());
+        singleLinkedList.show(singleLinkedList.getHeadNode());
 
     }
 }
@@ -45,7 +49,14 @@ class SingleLinkedList {
 
     private PersonNode headNode = new PersonNode(0, "", "");
 
-    //添加节点的单向链表
+    public PersonNode getHeadNode() {
+        return headNode;
+    }
+
+    public void setHeadNode(PersonNode headNode) {
+        this.headNode = headNode;
+    }
+//添加节点的单向链表
 
     /**
      * 在链表尾部插入
@@ -152,11 +163,11 @@ class SingleLinkedList {
      * 遍历节点
      */
     //显示链表中的有效节点
-    public void show() {
-        if (headNode.next == null) {
+    public void show(PersonNode personNode) {
+        if (personNode.next == null) {
             System.out.println("该链表为空~~~");
         }
-        PersonNode temp = headNode;
+        PersonNode temp = personNode;
         while (true) {
             if (temp.next == null) {
                 break;
@@ -171,6 +182,7 @@ class SingleLinkedList {
      * 面试题
      * 1、查询链表中有效节点的个数
      * 2、查找链表中倒数第K个节点
+     * 3、单链表的反转
      */
     public int getLength() {
         int length = 0;
@@ -206,6 +218,34 @@ class SingleLinkedList {
                 temp=temp.next;
         }
         return temp;
+    }
+    /**
+     * 3、单链表的反转
+     * 思路：重新定义一个单链表的头结点reverseHead
+     * 遍历原来的链表，将原始链表的有效节点依次加入到reverseHead头结点的最前端
+     * 将原始节点的头结点指向新建链表的第一个有效节点,即head.next=reverseHead.next
+     */
+
+    public void reverseSingleList(PersonNode head){
+        //定义一个临时变量
+        PersonNode cur=head.next; //当前的有效节点
+        PersonNode next=null;//当前有效节点的下一个节点
+        //定义一个反转链表的头结点
+        PersonNode reverseHeadNode=new PersonNode(0,"","");
+
+        while (cur != null) {
+            //判断是否需要反转，原始链表为空或者只有一个有效结点时，则不需要反转
+            if (cur == null || cur.next == null) {
+                break;
+            }
+            next=cur.next;//指向当前有效结点的下一个节点
+            cur.next=reverseHeadNode.next;//将有效结点连接起来
+            reverseHeadNode.next=cur;//将原始链表的有效结点放置到reverseHead的最前端
+            cur=next;
+        }
+        //将原始链表的头结点指向反转链表的第一个有效结点
+        head.next=reverseHeadNode.next;
+
     }
 }
 
