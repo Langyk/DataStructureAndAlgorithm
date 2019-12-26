@@ -206,3 +206,71 @@ sparseArr[sum+1][3]
 >
 >![](数据结构与算法.assets/双向链表中间删除.PNG)
 
+### 3、单向循环链表（无头结点）
+
+单向循环链表是首尾相连，使整个单链表构成一个环。约瑟夫问题时单向循环链表的一个典型的应用
+
+约瑟夫问题描述：
+
+>约瑟夫问题是一个非常著名的趣题，即由n个人坐成一圈，按顺时针由1开始给他们编号。* 然后由第一个人开始报数，数到m的人出局。现在需要求的是最后一个出局的人的编号。* 给定两个int n和m，代表游戏的人数。请返回最后一个出局的人的编号.
+
+问题分析：
+
+约瑟夫问题可以简单分为两个步骤
+
+构造Boy节点类
+
+```java
+ private int number;
+ private Boy next;
+```
+
+
+
+* 构建一个单向循环链表
+
+>![](数据结构与算法.assets/循环链表构造.PNG)
+>
+>定义两个指针变量First和cur，first表示头结点，cur指向当前节点
+>
+>```java
+>构造第一个节点first
+> first = boy;//第一个节点为first
+> first.setNext(first);//仅有一个节点时，first指向first，构成闭环
+> cur = first;//辅助变量指向first
+>构造其它节点 
+>cur.setNext(boy);//将新添加的节点设置为当前节点的后继节点
+>boy.setNext(first);//新添加的节点与first构成闭环
+>cur=boy;//将当前节点设置为新添加的节点
+>```
+
+* 根据约定的规则退出循环链表，直至仅有一个节点
+
+>![](数据结构与算法.assets/节点出循环链表.PNG)
+>
+>定义两个辅助节点变量first和helper，first指向每一轮要开始的节点，helper指向最后一个节点，当first与helper指向同一个节点时，该循环链表仅剩一个节点
+>
+>```java
+>构造函数
+>    moveCycle(int no,int number,int sum)
+>1、确定从第几个节点开始
+>for(int i=0;i<no-1;i++){
+>            first=first.getNext();
+>            helper=helper.getNext();
+>        }
+> 2、循环，找出节点，直至仅剩一个节点
+>   while (true){
+>            if(first==helper){
+>                System.out.printf("最后一个节点时%d\n",first.getNumber());
+>                break;
+>            }
+>            //开始,每number下，出圈一次
+>            for(int j=0;j<number-1;j++){
+>                first=first.getNext();
+>                helper=helper.getNext();
+>            }
+>            System.out.printf("%d出圈\n",first.getNumber());
+>            first=first.getNext();
+>            helper.setNext(first);
+>        }
+>```
