@@ -78,6 +78,7 @@ class DoubleLinkeList {
                 flag=true;
                 break;
             }
+
             temp=temp.next;
         }
         if(flag){
@@ -90,10 +91,10 @@ class DoubleLinkeList {
         }
         if(flag3){
             //在两个有效节点间添加
-            personNode2.pre= temp.next.pre;
-            temp.next.pre.next=personNode2;
+            personNode2.pre= temp;
             personNode2.next=temp.next;
             temp.next.pre=personNode2;
+            temp.next=personNode2;
         }
 
 
