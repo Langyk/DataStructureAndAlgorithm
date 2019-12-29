@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67ba30b7-502a-4c62-9e68-bd6830e374bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/stack/SingleLinkedListStackDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stack/CalculatorStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stack/ArrayStackDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack/ArrayStackDemo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,27 +16,32 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/stack/ArrayStackDemo.java">
+        <entry file="file://$PROJECT_DIR$/src/stack/CalculatorStack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="52" column="29" lean-forward="true" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+            <state relative-caret-position="266">
+              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
               <folding>
-                <element signature="e#802#803#0" expanded="true" />
-                <element signature="e#875#876#0" expanded="true" />
+                <element signature="e#514#515#0" expanded="true" />
+                <element signature="e#563#564#0" expanded="true" />
+                <element signature="e#612#613#0" expanded="true" />
+                <element signature="e#652#653#0" expanded="true" />
+                <element signature="e#3890#3891#0" expanded="true" />
+                <element signature="e#3923#3924#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stack/SingleLinkedListStackDemo.java">
+        <entry file="file://$PROJECT_DIR$/src/stack/ArrayStackDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-247">
-              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+            <state relative-caret-position="59">
+              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
               <folding>
-                <element signature="e#631#632#0" expanded="true" />
-                <element signature="e#292#293#0" expanded="true" />
-                <element signature="e#322#323#0" expanded="true" />
+                <element signature="e#801#802#0" expanded="true" />
+                <element signature="e#850#851#0" expanded="true" />
+                <element signature="e#899#900#0" expanded="true" />
+                <element signature="e#939#940#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,11 +70,12 @@
         <option value="$PROJECT_DIR$/src/LinkedList/SingleLinkedListDemo.java" />
         <option value="$PROJECT_DIR$/src/LinkedList/DoubleLinkedListDemo.java" />
         <option value="$PROJECT_DIR$/src/LinkedList/JosephusQuestion.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/stack/ArrayStack.java" />
-        <option value="$PROJECT_DIR$/src/stack/ArrayStackDemo.java" />
         <option value="$PROJECT_DIR$/src/stack/LinkedListStackDemo.java" />
         <option value="$PROJECT_DIR$/src/stack/SingleLinkedListStackDemo.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/stack/ArrayStackDemo.java" />
+        <option value="$PROJECT_DIR$/src/stack/CalculatorStack.java" />
       </list>
     </option>
   </component>
@@ -113,7 +120,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577447023398" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577619294394" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -140,9 +147,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SingleLinkedListStackDemo">
+  <component name="RunManager" selected="Application.CalculatorStack">
     <configuration name="ArrayStackDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="stack.ArrayStackDemo" />
+      <module name="DataStructureAndAlgorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stack.CalculatorStack" />
       <module name="DataStructureAndAlgorithm" />
       <extension name="coverage">
         <pattern>
@@ -180,19 +200,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingleLinkedListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LinkedList.SingleLinkedListDemo" />
-      <module name="DataStructureAndAlgorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LinkedList.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SingleLinkedListStackDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="stack.SingleLinkedListStackDemo" />
       <module name="DataStructureAndAlgorithm" />
@@ -208,11 +215,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CalculatorStack" />
         <item itemvalue="Application.SingleLinkedListStackDemo" />
         <item itemvalue="Application.ArrayStackDemo" />
         <item itemvalue="Application.JosephusQuestion" />
         <item itemvalue="Application.DoubleLinkedListDemo" />
-        <item itemvalue="Application.SingleLinkedListDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -233,10 +240,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69949000" />
+    <option name="totallyTimeSpent" value="78808000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1364" height="726" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23006135" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -247,15 +255,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18243243" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5050676" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27195945" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.08445946" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.5135135" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.23141892" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3293919" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -423,16 +431,6 @@
     <entry file="file://$PROJECT_DIR$/数据结构与算法.assets/image-20191130124418217.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="458">
-            <caret line="256" column="25" lean-forward="true" selection-start-line="256" selection-start-column="25" selection-end-line="256" selection-end-column="25" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/stack/SingleLinkedListStackDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-247">
@@ -445,13 +443,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="109">
+            <caret line="292" selection-start-line="292" selection-end-line="292" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/stack/ArrayStackDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="52" column="29" lean-forward="true" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+        <state relative-caret-position="59">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
           <folding>
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+            <element signature="e#899#900#0" expanded="true" />
+            <element signature="e#939#940#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stack/CalculatorStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding>
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#563#564#0" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+            <element signature="e#652#653#0" expanded="true" />
+            <element signature="e#3890#3891#0" expanded="true" />
+            <element signature="e#3923#3924#0" expanded="true" />
           </folding>
         </state>
       </provider>
