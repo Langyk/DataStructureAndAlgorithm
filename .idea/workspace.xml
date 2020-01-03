@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67ba30b7-502a-4c62-9e68-bd6830e374bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/weekly/Week02Test01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stack/MazeBackTracking.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/weekly/Week01Test01.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/weekly/Week01Test01.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/weekly/Week01Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/weekly/Week01Test01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/weekly/Week02Test01.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/weekly/Week02Test01.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,23 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/weekly/Week01Test01.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-190">
-              <caret line="59" column="12" lean-forward="true" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/weekly/Week02Test01.java">
+        <entry file="file://$PROJECT_DIR$/src/stack/MazeBackTracking.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
-              <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="82" column="38" lean-forward="true" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -69,6 +57,7 @@
         <option value="$PROJECT_DIR$/src/stack/RecurdionTestDemo.java" />
         <option value="$PROJECT_DIR$/src/weekly/Week02Test01.java" />
         <option value="$PROJECT_DIR$/src/weekly/Week01Test01.java" />
+        <option value="$PROJECT_DIR$/src/stack/MazeBackTracking.java" />
       </list>
     </option>
   </component>
@@ -78,7 +67,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="1" />
     <option name="y" value="1" />
     <option name="width" value="1364" />
@@ -109,26 +98,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="stack" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="DataStructureAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="代码实现" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="stack" type="462c0819:PsiDirectoryNode" />
-              <item name="CalculatorStack.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="DataStructureAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="代码实现" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="stack" type="462c0819:PsiDirectoryNode" />
-              <item name="ReversePolandExpressionDemon.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="DataStructureAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="代码实现" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="weekly" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -139,7 +108,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578051034161" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578059898278" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -166,9 +135,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Week02Test01">
-    <configuration name="CalculatorStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stack.CalculatorStack" />
+  <component name="RunManager" selected="Application.MazeBackTracking">
+    <configuration name="MazeBackTracking" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stack.MazeBackTracking" />
       <module name="DataStructureAndAlgorithm" />
       <extension name="coverage">
         <pattern>
@@ -234,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MazeBackTracking" />
         <item itemvalue="Application.Week02Test01" />
         <item itemvalue="Application.Week01Test01" />
         <item itemvalue="Application.RecurdionTestDemo" />
         <item itemvalue="Application.ReversePolandExpressionDemon" />
-        <item itemvalue="Application.CalculatorStack" />
       </list>
     </recent_temporary>
   </component>
@@ -259,7 +228,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104558000" />
+    <option name="totallyTimeSpent" value="109884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1364" height="726" extended-state="0" />
@@ -274,7 +243,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.050675675" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.089527026" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3412162" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -282,7 +251,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.6807432" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.1570946" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3293919" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -533,6 +502,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/weekly/Week02Test01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/weekly/Week01Test01.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-190">
@@ -540,13 +519,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/weekly/Week02Test01.java">
+    <entry file="file://$PROJECT_DIR$/src/stack/MazeBackTracking.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
-          <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="82" column="38" lean-forward="true" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
         </state>
       </provider>
     </entry>
