@@ -17,6 +17,7 @@ public class ReversePolandExpressionDemon {
          */
         String inSuffixExpression="1+((2+3)*4)-5";
         List list=getInSuffixExpression(inSuffixExpression);
+        System.out.println(list);
         List<String> ls=inFixExpressionToSuffixExpression(list);
         System.out.println(ls);
         int value=calculate(ls);
@@ -78,7 +79,7 @@ public class ReversePolandExpressionDemon {
                     s1.pop();
                 }else {
                     //当item的优先级小于等于s1栈的运算符，将s1栈的运算符弹出加入到s2中。
-                    while (s1.size()!=0&&Operation.oper(item)<=Operation.oper(s1.peek())){
+                    while (s1.size()!=0&&Operation.oper(s1.peek())>= Operation.oper(item)){
                             s2.add(s1.pop());
                     }
                     s1.push(item);
@@ -160,6 +161,7 @@ class  Operation{
                 break;
             default:
                 System.out.println("该符号不是运算符");
+                break;
         }
         return res;
     }
