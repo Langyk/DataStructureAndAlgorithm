@@ -17,7 +17,7 @@ public class Week01Test01 {
         int arrTest[][]={{1,2,3,4,100},
                             {5,6,9,101},
                             {7,99,100,102}};
-        /**
+        /**方法一：
          * arrTest[row][col]
          * 查找规则：从右上角开始，比较输入的值value与数组中右上角的值，
          *   如果小于右上角的值，如果大于右上角的值col--，
@@ -32,10 +32,19 @@ public class Week01Test01 {
         }else {
             System.out.println("该值不存在数组中");
         }
+        //方法二：
+        Boolean flag2=week01Test01.isExist2(arrTest,9);
+        if(flag){
+            System.out.println("该值存在数组中");
+        }else {
+            System.out.println("该值不存在数组中");
+        }
 
     }
 
-    //编写一个查找方法,从右上角开始查找
+    /**
+     *编写一个查找方法,从右上角开始查找
+     */
     public boolean isExist(int [][] arrTest,int value){
         int row=0;
         int col=arrTest[1].length-1;
@@ -52,5 +61,34 @@ public class Week01Test01 {
        }
        return false;
     }
+
+    /**
+     * 方法二：既然每行，每列都是递增，可以拆成对每一行进行二分查找，时间复杂度为logm
+     */
+    public boolean isExist2(int[][] arrTest,int Value){
+        for(int i=0;i<arrTest.length;i++){
+            int low=0;
+            int high=arrTest[i].length-1;
+            while (low<high){
+                int middle=(low+high)/2;
+                if(Value==arrTest[i][middle]){
+                    return true;
+                }else if(Value>arrTest[i][middle]){
+                    low=middle+1;
+                }else if(Value<arrTest[i][middle]){
+                    high=middle-1;
+                }
+            }
+        }
+        return false;
+    }
+    /**
+     * 方法三：行、列都使用二分查找
+     */
+    public boolean isExist3(int[][] arrTest,int Value){
+
+        return false;
+    }
+
 
 }

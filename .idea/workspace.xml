@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67ba30b7-502a-4c62-9e68-bd6830e374bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/stack/RecurdionTestDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weekly/Week02Test01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/stack/Operation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/stack/Operation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/stack/ReversePolandExpressionDemon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/stack/ReversePolandExpressionDemon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stack/ReversePolandExpressionDemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack/ReversePolandExpressionDemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/weekly/Week01Test01.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/weekly/Week01Test01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/weekly/Week01Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/weekly/Week01Test01.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +16,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/stack/RecurdionTestDemo.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/weekly/Week01Test01.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-152">
-              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            <state relative-caret-position="-190">
+              <caret line="59" column="12" lean-forward="true" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/weekly/Week02Test01.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,7 +56,6 @@
         <option value="$PROJECT_DIR$/src/queue/ArrayQueue.java" />
         <option value="$PROJECT_DIR$/src/queue/CycleQueue.java" />
         <option value="$PROJECT_DIR$/src/weekly/Week01Test01V1.java" />
-        <option value="$PROJECT_DIR$/src/weekly/Week01Test01.java" />
         <option value="$PROJECT_DIR$/src/LinkedList/SingleLinkedListDemo.java" />
         <option value="$PROJECT_DIR$/src/LinkedList/DoubleLinkedListDemo.java" />
         <option value="$PROJECT_DIR$/src/LinkedList/JosephusQuestion.java" />
@@ -57,10 +67,18 @@
         <option value="$PROJECT_DIR$/src/stack/CalculatorStack.java" />
         <option value="$PROJECT_DIR$/src/stack/ReversePolandExpressionDemon.java" />
         <option value="$PROJECT_DIR$/src/stack/RecurdionTestDemo.java" />
+        <option value="$PROJECT_DIR$/src/weekly/Week02Test01.java" />
+        <option value="$PROJECT_DIR$/src/weekly/Week01Test01.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="1" />
     <option name="y" value="1" />
     <option name="width" value="1364" />
@@ -91,6 +109,26 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="stack" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="DataStructureAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="代码实现" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="stack" type="462c0819:PsiDirectoryNode" />
+              <item name="CalculatorStack.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="DataStructureAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="代码实现" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="stack" type="462c0819:PsiDirectoryNode" />
+              <item name="ReversePolandExpressionDemon.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="DataStructureAndAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="代码实现" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="weekly" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -101,7 +139,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578045524841" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578051034161" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -128,20 +166,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RecurdionTestDemo">
-    <configuration name="ArrayStackDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stack.ArrayStackDemo" />
-      <module name="DataStructureAndAlgorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="stack.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Week02Test01">
     <configuration name="CalculatorStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="stack.CalculatorStack" />
       <module name="DataStructureAndAlgorithm" />
@@ -181,12 +206,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingleLinkedListStackDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stack.SingleLinkedListStackDemo" />
+    <configuration name="Week01Test01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="weekly.Week01Test01" />
       <module name="DataStructureAndAlgorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="stack.*" />
+          <option name="PATTERN" value="weekly.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Week02Test01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="weekly.Week02Test01" />
+      <module name="DataStructureAndAlgorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="weekly.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -196,11 +234,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Week02Test01" />
+        <item itemvalue="Application.Week01Test01" />
         <item itemvalue="Application.RecurdionTestDemo" />
         <item itemvalue="Application.ReversePolandExpressionDemon" />
         <item itemvalue="Application.CalculatorStack" />
-        <item itemvalue="Application.SingleLinkedListStackDemo" />
-        <item itemvalue="Application.ArrayStackDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +259,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99151000" />
+    <option name="totallyTimeSpent" value="104558000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1364" height="726" extended-state="0" />
@@ -236,7 +274,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28547296" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.050675675" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3412162" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -244,7 +282,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.47804055" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.6807432" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3293919" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -253,7 +291,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.3297546" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
@@ -345,13 +383,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/weekly/Week01Test01.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="40" column="36" lean-forward="true" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -478,27 +509,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stack/CalculatorStack.java">
+    <entry file="file://$PROJECT_DIR$/src/stack/RecurdionTestDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        <state relative-caret-position="124">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/stack/ReversePolandExpressionDemon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1577">
-          <caret line="83" column="21" lean-forward="true" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
+        <state relative-caret-position="2011">
+          <caret line="140" column="7" selection-start-line="140" selection-start-column="7" selection-end-line="140" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stack/RecurdionTestDemo.java">
+    <entry file="file://$PROJECT_DIR$/src/stack/CalculatorStack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-152">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state relative-caret-position="72">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weekly/Week01Test01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-190">
+          <caret line="59" column="12" lean-forward="true" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weekly/Week02Test01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
