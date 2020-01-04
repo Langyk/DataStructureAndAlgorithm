@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67ba30b7-502a-4c62-9e68-bd6830e374bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/stack/MazeBackTracking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stack/Queun8.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/weekly/Week01Test01.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/weekly/Week01Test01.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/weekly/Week02Test01.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/weekly/Week02Test01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stack/MazeBackTracking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack/MazeQuestion.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,10 +16,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/stack/MazeBackTracking.java">
+        <entry file="file://$PROJECT_DIR$/src/stack/Queun8.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="82" column="38" lean-forward="true" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
+            <state relative-caret-position="-170">
+              <caret line="49" column="27" lean-forward="true" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -58,6 +57,8 @@
         <option value="$PROJECT_DIR$/src/weekly/Week02Test01.java" />
         <option value="$PROJECT_DIR$/src/weekly/Week01Test01.java" />
         <option value="$PROJECT_DIR$/src/stack/MazeBackTracking.java" />
+        <option value="$PROJECT_DIR$/src/stack/MazeQuestion.java" />
+        <option value="$PROJECT_DIR$/src/stack/Queun8.java" />
       </list>
     </option>
   </component>
@@ -79,7 +80,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -102,13 +103,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578059898278" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578109440484" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -135,9 +136,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MazeBackTracking">
-    <configuration name="MazeBackTracking" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stack.MazeBackTracking" />
+  <component name="RunManager" selected="Application.Queun8">
+    <configuration name="MazeQuestion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stack.MazeQuestion" />
+      <module name="DataStructureAndAlgorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Queun8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stack.Queun8" />
       <module name="DataStructureAndAlgorithm" />
       <extension name="coverage">
         <pattern>
@@ -151,19 +165,6 @@
     </configuration>
     <configuration name="RecurdionTestDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="stack.RecurdionTestDemo" />
-      <module name="DataStructureAndAlgorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="stack.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReversePolandExpressionDemon" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stack.ReversePolandExpressionDemon" />
       <module name="DataStructureAndAlgorithm" />
       <extension name="coverage">
         <pattern>
@@ -203,11 +204,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MazeBackTracking" />
+        <item itemvalue="Application.Queun8" />
+        <item itemvalue="Application.MazeQuestion" />
         <item itemvalue="Application.Week02Test01" />
         <item itemvalue="Application.Week01Test01" />
         <item itemvalue="Application.RecurdionTestDemo" />
-        <item itemvalue="Application.ReversePolandExpressionDemon" />
       </list>
     </recent_temporary>
   </component>
@@ -224,17 +225,19 @@
       <workItem from="1575104300150" duration="1782000" />
       <workItem from="1575181125498" duration="9498000" />
       <workItem from="1575259046251" duration="3388000" />
+      <workItem from="1578100692973" duration="10000" />
+      <workItem from="1578101036382" duration="339000" />
+      <workItem from="1578101669141" duration="4170000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109884000" />
+    <option name="totallyTimeSpent" value="117246000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1364" height="726" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23006135" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24156442" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -243,7 +246,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.089527026" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.11148649" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3412162" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -251,7 +254,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.1570946" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3935811" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3293919" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -390,16 +393,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/数据结构与算法.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="95">
-            <caret line="80" column="7" selection-end-line="208" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/数据结构与算法.md" />
     <entry file="file://$PROJECT_DIR$/src/LinkedList/JosephusQuestion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -519,10 +513,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stack/MazeBackTracking.java">
+    <entry file="file://$PROJECT_DIR$/src/stack/MazeQuestion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="82" column="38" lean-forward="true" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
+        <state relative-caret-position="380">
+          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stack/Queun8.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="49" column="27" lean-forward="true" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
         </state>
       </provider>
     </entry>

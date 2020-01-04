@@ -21,9 +21,9 @@ package stack;
  * 1、map表示地图
  * 2、i,j表示从地图的那个位置开始出发（1,1）
  * 3、如果小球到map[6][5]位置，则说明通路找到
- * 4、策略：下->右->上->左
+ * 4、策略：下->右->上->左（算法的优化是策略的变化）
  */
-public class MazeBackTracking {
+public class MazeQuestion {
     public static void main(String[] args) {
     //定义一个二维数组
         int[][] map=new int[8][7];
