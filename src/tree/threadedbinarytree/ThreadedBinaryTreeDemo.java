@@ -6,13 +6,13 @@ package tree.threadedbinarytree;
  * @Version 1.0
  */
 public class ThreadedBinaryTreeDemo {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         PersonNode personNode1 = new PersonNode(1, "Simon");
         PersonNode personNode2 = new PersonNode(3, "Kevin");
         PersonNode personNode3 = new PersonNode(6, "Snow");
         PersonNode personNode4 = new PersonNode(8, "Eidd");
-        PersonNode personNode5=new PersonNode(10,"sisi");
-        PersonNode personNode6=new PersonNode(14,"wang");
+        PersonNode personNode5 = new PersonNode(10, "sisi");
+        PersonNode personNode6 = new PersonNode(14, "wang");
         //构造二叉树
         personNode1.setLeftNode(personNode2);
         personNode1.setRightNode(personNode3);
@@ -20,14 +20,18 @@ public class ThreadedBinaryTreeDemo {
         personNode2.setRightNode(personNode5);
         personNode3.setLeftNode(personNode6);
         //测试中序线索化
+//        TreadedBinaryTree tbt = new TreadedBinaryTree(personNode1);
+//        tbt.threadedNodes();
+//
+//        PersonNode leftNode = personNode1.getLeftNode();
+//        PersonNode rightNode = personNode1.getRightNode();
+//        System.out.println(leftNode);
+//        System.out.println(rightNode);
+//遍历线索化二叉树
+        System.out.println("线索化二叉树");
         TreadedBinaryTree tbt=new TreadedBinaryTree(personNode1);
         tbt.threadedNodes();
-
-        PersonNode leftNode=personNode5.getLeftNode();
-        PersonNode rightNode=personNode5.getRightNode();
-        System.out.println(leftNode);
-        System.out.println(rightNode);
-
+        tbt.listThreadedBinaryTree();
 
     }
 }
@@ -35,7 +39,7 @@ public class ThreadedBinaryTreeDemo {
 /**
  * 构造线索化二叉树
  */
-class TreadedBinaryTree{
+class TreadedBinaryTree {
     private PersonNode root;
 
     public TreadedBinaryTree(PersonNode root) {
@@ -45,40 +49,62 @@ class TreadedBinaryTree{
     public void setRoot(PersonNode root) {
         this.root = root;
     }
+
     /******************************采用中序遍历的方式构造线索化二叉树******************************************/
-    public void threadedNodes(){
+    public void threadedNodes() {
         this.threadedNodes(root);
     }
+
     //定义当前结点的前驱结点
-    PersonNode pre=null;
+    PersonNode pre = null;
+
     //参数中的node为需要线索化的结点
-    public void threadedNodes(PersonNode node){
-        if(node==null){
+    public void threadedNodes(PersonNode node) {
+        if (node == null) {
             return;
         }
         //线索化左子树
         threadedNodes(node.getLeftNode());
         //线索化当前结点
-        if(node.getLeftNode()==null){
+        if (node.getLeftNode() == null) {
             //让当前结点的左指针指向前驱结点
             node.setLeftNode(pre);
             //修改当前结点的左指针类型
             node.setLeftNodeType(1);
         }
         //处理后继结点
-        if(pre!=null&&pre.getRightNode()==null){
+        if (pre != null && pre.getRightNode() == null) {
             //让前驱结点的右指针指向当前结点
             pre.setRightNode(node);
             //修改前驱结点的右指针类型
             pre.setRightNodeType(1);
         }
         //每处理一个结点后，让当前结点是下一个结点的前驱结点。
-        pre=node;
+        pre = node;
         //线索化右子树
         threadedNodes(node.getRightNode());
     }
 
-  /***********************************遍历************************************/
+    /********************************采用新的遍历方法构造线索化二叉树**********************************************/
+    public void listThreadedBinaryTree() {
+        PersonNode node = root;
+        while (node != null) {
+            while (node.getLeftNodeType() == 0) {
+                node = node.getLeftNode();
+            }
+            System.out.println(node);
+
+            while (node.getRightNodeType() == 1) {
+                node = node.getRightNode();
+                System.out.println(node);
+            }
+            node = node.getRightNode();
+        }
+
+    }
+
+
+    /***********************************遍历************************************/
     //1、前序遍历
     public void preOrder() {
         if (this.root != null) {
@@ -105,41 +131,45 @@ class TreadedBinaryTree{
             System.out.println("二叉树为空，无法遍历");
         }
     }
+
     /***************************遍历查找指定的结点*****************************************/
     //1、前序遍历查找
-    public PersonNode preOrderSearch(int no){
-        if(this.root!=null){
+    public PersonNode preOrderSearch(int no) {
+        if (this.root != null) {
             return this.root.preOrderSearch(no);
-        }else {
+        } else {
             return null;
         }
     }
+
     //2、中序遍历查找
-    public PersonNode infixOrderSearch(int no){
-        if(this.root!=null){
+    public PersonNode infixOrderSearch(int no) {
+        if (this.root != null) {
             return this.root.infixOrderSearch(no);
-        }else {
+        } else {
             return null;
         }
     }
+
     //3、后序遍历查找
-    public PersonNode postOrderSearch(int no){
-        if(this.root!=null){
+    public PersonNode postOrderSearch(int no) {
+        if (this.root != null) {
             return this.root.postNodeSearch(no);
-        }else {
+        } else {
             return null;
         }
     }
-/****************************删除指定的结点****************************************/
+
+    /****************************删除指定的结点****************************************/
     //删除指定的结点
-    public void delNode(int no){
-        if(this.root!=null){
-            if(this.root.getNo()==no){
-                this.root=null;
-            }else {
+    public void delNode(int no) {
+        if (this.root != null) {
+            if (this.root.getNo() == no) {
+                this.root = null;
+            } else {
                 this.root.delNode(no);
             }
-        }else {
+        } else {
             System.out.println("该二叉树为空树");
         }
     }
@@ -301,35 +331,35 @@ class PersonNode {
         }
         //若没有左子树查找到，则判断右结点是否存在，存在时进行后序遍历查找递归
         if (this.rightNode != null) {
-            resNode= this.rightNode.postNodeSearch(no);
+            resNode = this.rightNode.postNodeSearch(no);
         }
         //右子树查找到
-        if(resNode!=null){
+        if (resNode != null) {
             return resNode;
         }
         //判断当前节点是否为要查找的结点
         if (this.no == no) {
-            resNode= this;
+            resNode = this;
         }
         return resNode;
     }
 
     //删除指定的结点
-    public void delNode(int no){
+    public void delNode(int no) {
         //判断左边结点是否为空，非空时判断是否为要查找的结点
-        if(this.leftNode!=null&&this.leftNode.no==no){
-            this.leftNode=null;
+        if (this.leftNode != null && this.leftNode.no == no) {
+            this.leftNode = null;
         }
         //判断右边结点是否为空，非空时判断是否为要查找的结点
-        if(this.rightNode!=null&&this.rightNode.no==no){
-            this.rightNode=null;
+        if (this.rightNode != null && this.rightNode.no == no) {
+            this.rightNode = null;
         }
         //判断左子结点是非为空，不为空时进行递归查找删除
-        if(this.leftNode!=null){
+        if (this.leftNode != null) {
             this.leftNode.delNode(no);
         }
         //判断右子结点是非为空，不为空时进行递归查找删除
-        if(this.rightNode!=null){
+        if (this.rightNode != null) {
             this.rightNode.delNode(no);
         }
     }
