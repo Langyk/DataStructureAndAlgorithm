@@ -2,6 +2,10 @@ package tree.huffmanCode;
 
 import sun.rmi.runtime.NewThreadAction;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
 import java.util.*;
 
 /**
@@ -17,6 +21,12 @@ public class HuffmanCode {
         byte[] huffmanCodebytes = huffmanCodeZip(contentBytes);
 //        System.out.println(Arrays.toString(huffmanCodebytes));
 //        System.out.println(huffmanCodebytes.length);
+
+        /***************************w文件压缩解压********************************/
+        String srcFile="d://src.bmp";
+        String dstFile="d://dst.zip";
+        zipFile(srcFile,dstFile);
+        System.out.println("压缩文件OK");
         /**
          *  压缩率（40-17）/40=57%
          */
@@ -35,6 +45,48 @@ public class HuffmanCode {
 //        System.out.println(Arrays.toString(huffmanCodeBytes));
 //        System.out.println(huffmanCodeBytes.length);
 
+    }
+    /*******************************文件压缩*******************************************************/
+//编写一个方法，将文件压缩
+
+    /**
+     * @param srcFile 源文件路径
+     * @param dstFile  目标文件路径
+     */
+    public static void zipFile(String srcFile,String dstFile){
+        //创建输出流
+        OutputStream os=null;
+        ObjectOutputStream oos=null;
+        //创建输入流
+        FileInputStream is=null;
+        try {
+            //创建文件输入流
+            is=new FileInputStream(srcFile);
+            //创建一个和源文件大小的byte[]
+            byte[] b=new byte[is.available()];
+            //读取文件
+            is.read(b);
+            //直接对源文件压缩
+            byte[] huffmanBytes=huffmanCodeZip(b);
+            //创建文件的输出流，存放压缩文件
+            os=new FileOutputStream(dstFile);
+            //创建一个和文件输出流有关的ObjectOutPutStream
+            oos=new ObjectOutputStream(os);
+            //将霍夫曼编码后的字节数组写入压缩文件
+            oos.writeObject(huffmanBytes);
+            //写入霍夫曼编码，是为了恢复原文件使用
+            oos.writeObject(huffmanCodes);
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }finally {
+            try {
+                is.close();
+                os.close();
+                oos.close();
+            }catch (Exception e){
+                System.out.println(e.getMessage());
+            }
+        }
     }
 
     /*************************解码部分****************************************************/
