@@ -21,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tree/huffmanCode/HuffmanCode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="84" column="28" lean-forward="true" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
+            <state relative-caret-position="1387">
+              <caret line="268" column="45" selection-start-line="268" selection-start-column="37" selection-end-line="268" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2020#2034#0" expanded="true" />
@@ -95,7 +95,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="1" />
     <option name="y" value="1" />
     <option name="width" value="1364" />
@@ -143,7 +143,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581001754309" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581049503170" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -267,12 +267,12 @@
       <workItem from="1580288453185" duration="7279000" />
       <workItem from="1580306639798" duration="34048000" />
       <workItem from="1580701906657" duration="24503000" />
-      <workItem from="1580872281451" duration="31848000" />
+      <workItem from="1580872281451" duration="39285000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="243064000" />
+    <option name="totallyTimeSpent" value="250501000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1364" height="726" extended-state="0" />
@@ -295,7 +295,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.17398648" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.05912162" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007669" side_tool="true" weight="0.3293919" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49923313" weight="0.3293919" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -709,8 +709,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tree/huffmanCode/HuffmanCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="84" column="28" lean-forward="true" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
+        <state relative-caret-position="1387">
+          <caret line="268" column="45" selection-start-line="268" selection-start-column="37" selection-end-line="268" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2020#2034#0" expanded="true" />
