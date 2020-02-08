@@ -6,11 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67ba30b7-502a-4c62-9e68-bd6830e374bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tree/avl/AVLTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/binarysorttree/BinarySortTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/tree/huffmanCode/HuffmanCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/tree/huffmanCode/HuffmanCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/tree/huffmanCode/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructureAndAlgorithm/tree/huffmanCode/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/avl/AVLTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/avl/AVLTree.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,14 +34,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tree/avl/AVLTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="181" column="5" lean-forward="true" selection-start-line="181" selection-start-column="5" selection-end-line="181" selection-end-column="5" />
+            <state relative-caret-position="263">
+              <caret line="237" column="19" selection-start-line="237" selection-start-column="19" selection-end-line="237" selection-end-column="19" />
               <folding>
                 <element signature="e#519#520#0" expanded="true" />
                 <element signature="e#546#547#0" expanded="true" />
                 <element signature="e#273#274#0" expanded="true" />
                 <element signature="e#307#308#0" expanded="true" />
-                <element signature="e#4744#4745#0" expanded="true" />
+                <element signature="e#4817#4818#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,7 +111,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="1" />
     <option name="y" value="1" />
     <option name="width" value="1364" />
@@ -162,7 +159,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581080078511" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581134021402" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -286,12 +283,12 @@
       <workItem from="1580288453185" duration="7279000" />
       <workItem from="1580306639798" duration="34048000" />
       <workItem from="1580701906657" duration="24503000" />
-      <workItem from="1580872281451" duration="54747000" />
+      <workItem from="1580872281451" duration="61922000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="265963000" />
+    <option name="totallyTimeSpent" value="273138000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1364" height="726" extended-state="0" />
@@ -306,7 +303,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49923313" visible="true" weight="0.1402027" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49923313" visible="true" weight="0.14864865" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.1097973" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -314,7 +311,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.47804055" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3935811" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007669" side_tool="true" weight="0.3293919" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49923313" weight="0.3293919" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -763,14 +760,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tree/avl/AVLTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="181" column="5" lean-forward="true" selection-start-line="181" selection-start-column="5" selection-end-line="181" selection-end-column="5" />
+        <state relative-caret-position="263">
+          <caret line="237" column="19" selection-start-line="237" selection-start-column="19" selection-end-line="237" selection-end-column="19" />
           <folding>
             <element signature="e#519#520#0" expanded="true" />
             <element signature="e#546#547#0" expanded="true" />
             <element signature="e#273#274#0" expanded="true" />
             <element signature="e#307#308#0" expanded="true" />
-            <element signature="e#4744#4745#0" expanded="true" />
+            <element signature="e#4817#4818#0" expanded="true" />
           </folding>
         </state>
       </provider>
