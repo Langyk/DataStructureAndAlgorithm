@@ -1,11 +1,11 @@
-package tenalgorithm;
+package tenalgorithm.binarysearchnorecursion;
 
 /**
  * @Author: Simon Lang
- * @Date: 2020/2/11 20:25
+ * @Date: 2020/2/11 21:23
  * @Version 1.0
  */
-public class BinarySearchNoRecursion {
+public class BinarySearch {
     public static void main(String[] args){
         int[] arr={1,3,8,10,11,67,100};
         int index=binarySearch(arr,200);
