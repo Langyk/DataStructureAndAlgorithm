@@ -2,6 +2,7 @@ package graph;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 
 /**
  * @Author: Simon Lang
@@ -28,7 +29,10 @@ public class Graph {
         graph.insertEdge(1, 4, 1);
         graph.showGraph();
         //测试图的遍历
-        graph.dfs();
+        //深度优先遍历
+//        graph.dfs();
+        //广度优先遍历
+        graph.bfs();
     }
 
     private ArrayList<String> vertexList;//存储顶点的集合
@@ -71,8 +75,8 @@ public class Graph {
 //深度优选遍历算法DFS
     //i 第一次就是0
     public void dfs(boolean[] isVisited,int i){
-        //首先我们访问该结点，然后刷输出
-        System.out.println(getValueByIndex(i));
+        //首先我们访问该结点，然后输出
+        System.out.print(getValueByIndex(i)+ "=>");
         //将结点设置为已访问
         isVisited[i]=true;
         //查找i的第一个邻接结点w
@@ -88,13 +92,53 @@ public class Graph {
     //对dfs进行一个重载，遍历所有的结点
     public void dfs(){
         //遍历所有的结点，进行dfs[回溯]
-        for (int i=0;i<getNumOfVertex();i++){
-            if(!isVisited[i]){
-                dfs(isVisited,i);
-            }
-        }
+//        for (int i=0;i<getNumOfVertex();i++){
+//            if(!isVisited[i]){
+//                dfs(isVisited,i);
+//            }
+//        }
+        dfs(isVisited,0);
     }
+    //广度优先遍历算法BFS
+    public void bfs(boolean[] isVisited,int index){
+        int u;//表示队列头结点的下标
+        int w;//邻接结点w
+        //队列，记录结点的访问顺序
+        LinkedList queue=new LinkedList();
+        //访问结点，输出结点信息
+        System.out.print(getValueByIndex(index)+ "=>");
+        //标记为已访问
+        isVisited[index]=true;
+        //将结点增加到队列
+        queue.addLast(index);
+        while (!queue.isEmpty()){
+            //取出队列的结点下标
+            u=(Integer) queue.removeFirst();
+            //得到第一个邻接结点的的下标w
+            w=getFirstNeighbor(u);
+            while (w!=-1){
+                //是否访问过
+                if(!isVisited[w]){
+                    System.out.print(getValueByIndex(w) + "=>");
+                    //标记已被访问
+                    isVisited[w]=true;
+                    //w入队列
+                    queue.addLast(w);
+                }
+                //以u为前驱结点，找w的下一个邻接结点
+                w=getNextNeighbor(u,w);
+            }
 
+        }
+}
+
+    //遍历所有结点，都进行广度优先搜索
+    public void bfs(){
+//            for(int i=0;i<vertexList.size();i++){
+//                bfs(isVisited,i);
+//            }
+        bfs(isVisited,0);
+    }
 /******************************************************/
     //返回结点的个数
     public int getNumOfVertex() {
